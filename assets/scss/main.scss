@@ -12,13 +12,21 @@
 
 @import 'super_sprite';
 
+@import 'fonts/font_fontawesome';
+@import 'fonts/font_roboto';
+@import 'base64';
+@import 'import/print';
+
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
-  font-weight: $fnorm;
+  font-weight: $fthin;
   line-height: $base-line-height;
 
   min-width: 320px;
+  max-width: 2000px;
+  margin-right: auto;
+  margin-left: auto;
 
   transition: $base-transition;
 
@@ -90,29 +98,86 @@ picture {
 }
 
 header {
-  background-color: $gray-light;
+  height: 120px;
+
+  background-color: #fff;
   .logo {
+    position: absolute;
+    z-index: 10;
+
     display: block;
+
+    padding-top: 15px;
+
+    text-align: center;
     img {
+      float: none;
+
       max-width: 100%;
     }
+  }
+  .cotacts-left,
+  .phone-block,
+  .order-block {
+    padding-top: 22px;
+  }
+  .phone-block {
+    text-align: right;
+  }
+  .order-block {
+    padding-right: 0;
+    //padding-left: 0;
   }
 }
 nav {
   ul {
+    height: 100%;
+
     @extend .justify-child;
     @extend .clearfix;
     li {
+      font-size: 13px;
+
       display: inline-block;
+
+      height: 100%;
+      a {
+        position: relative;
+
+        display: inline-block;
+
+        margin: 0 21px;
+      }
+      &:last-child {
+        a {
+          margin-right: 0;
+        }
+      }
+      &:first-child {
+        a {
+          margin-left: 0;
+        }
+      }
+      &.current-menu-item {
+        a {
+          &:before {
+            position: absolute;
+
+            content: '';
+          }
+        }
+      }
     }
   }
   .headnav {
-    font-size: 100%;
+    //font-size: 100%;
   }
 }
 
 section {
-  padding: 0 0 $footer;
+  padding: 128px 0 0 0;
+
+  background: url(../img/page-top-bg.jpg) no-repeat center -120px;
 }
 article {
   @extend .clearfix;
@@ -120,6 +185,42 @@ article {
 .looper {
   @extend .clearfix;
 }
+
+.home {
+  section {
+    padding-top: 0;
+
+    background: none;
+  }
+}
+.home__slide {
+  height: 500px;
+  padding-top: 122px;
+
+  text-align: center;
+
+  background: url(../img/header-bg.jpg) no-repeat center -120px;
+  .slide-title {
+    font-size: 50px;
+
+    display: block;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $blue;
+  }
+  .slide-slogan {
+    font-size: 20px;
+
+    display: block;
+  }
+  .blue_button {
+    height: 45px;
+  }
+}
+
+
 
 
 footer {
@@ -129,8 +230,11 @@ footer {
   background-color: $gray-light;
 }
 
-
-@import 'fonts/font_fontawesome';
-@import 'fonts/font_roboto';
-@import 'base64';
-@import 'import/print';
+@media (max-width: 1200px) {
+  header {
+    height: auto;
+    .logo {
+      position: relative;
+    }
+  }
+}

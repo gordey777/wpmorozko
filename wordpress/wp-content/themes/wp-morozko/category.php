@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+    <div class="container">
+    <div class="row">
   <article>
 
     <h1 class="cat-title inner-title"><?php _e( 'Categories for', 'wpeasy' ); the_category(', '); ?></h1>

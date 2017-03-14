@@ -393,8 +393,8 @@ hr {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: $padiing-size;
+  padding-left: $padiing-size;
 }
 
 @media (min-width: 768px) {
@@ -416,8 +416,8 @@ hr {
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -$padiing-size;
+  margin-left: -$padiing-size;
 }
 
 .col-xs-1,
@@ -471,8 +471,8 @@ hr {
   position: relative;
 
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: $padiing-size;
+  padding-left: $padiing-size;
 }
 
 .col-xs-1,

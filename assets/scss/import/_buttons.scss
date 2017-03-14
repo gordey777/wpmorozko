@@ -6,8 +6,8 @@ input[type='submit'],
 button {
   font-family: $base-font-family;
   font-size: $base-font-size;
-  font-weight: 600;
-  line-height: 1;
+  //font-weight: 600;
+  //line-height: 1;
 
   display: inline-block;
 
@@ -29,6 +29,7 @@ button {
   &:hover,
   &:focus {
     color: #fff;
+    outline: none;
     background-color: darken($action-color, 15%);
   }
   &:active {
@@ -38,5 +39,72 @@ button {
     cursor: not-allowed;
 
     opacity: .5;
+  }
+}
+
+
+.red_button,
+.blue_button {
+  //font-size: 13px;
+  position: relative;
+  //display: inline-block;
+
+  box-sizing: border-block;
+  width: 149px;
+  height: 38px;
+  margin: 0 auto;
+  padding: 12px 0 0 0;
+
+  text-align: center;
+
+  color: #fff;
+  //border-radius: 8px;
+  //background: $blue;
+  /*   &:after {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  //width: calc(100% - 2px);
+  //height: calc(100% - 2px);
+
+  content: '';
+
+  border: 1px dashed #fff;
+  border-radius: 8px;
+  background: transparent;
+} */
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    //color: #fff;
+  }
+  &:after {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    //width: calc(100% - 2px);
+    //height: calc(100% - 2px);
+
+    content: '';
+
+    border: 1px dashed #fff;
+    border-radius: $base-border-radius;
+    background: transparent;
+  }
+}
+
+.red_button {
+  background-color: $red;
+  &:hover,
+  &:focus {
+    background-color: darken($red, 15%);
+  }
+  &:active {
+    color: lighten($red, 15%);
   }
 }

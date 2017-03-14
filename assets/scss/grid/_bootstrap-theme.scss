@@ -90,7 +90,7 @@ fieldset[disabled] {
   &:hover,
   &:focus {
     background-color: #e0e0e0;
-    background-position: 0 -15px;
+    background-position: 0 -$padiing-size;
   }
   &:active,
   &.active {
@@ -181,7 +181,7 @@ fieldset[disabled] .btn-default.active {
   &:hover,
   &:focus {
     background-color: #265a88;
-    background-position: 0 -15px;
+    background-position: 0 -$padiing-size;
   }
   &:active,
   &.active {
@@ -272,7 +272,7 @@ fieldset[disabled] .btn-primary.active {
   &:hover,
   &:focus {
     background-color: #419641;
-    background-position: 0 -15px;
+    background-position: 0 -$padiing-size;
   }
   &:active,
   &.active {
@@ -363,7 +363,7 @@ fieldset[disabled] .btn-success.active {
   &:hover,
   &:focus {
     background-color: #2aabd2;
-    background-position: 0 -15px;
+    background-position: 0 -$padiing-size;
   }
   &:active,
   &.active {
@@ -454,7 +454,7 @@ fieldset[disabled] .btn-info.active {
   &:hover,
   &:focus {
     background-color: #eb9316;
-    background-position: 0 -15px;
+    background-position: 0 -$padiing-size;
   }
   &:active,
   &.active {
@@ -545,7 +545,7 @@ fieldset[disabled] .btn-warning.active {
   &:hover,
   &:focus {
     background-color: #c12e2a;
-    background-position: 0 -15px;
+    background-position: 0 -$padiing-size;
   }
   &:active,
   &.active {
