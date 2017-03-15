@@ -134,9 +134,6 @@ header {
     width: 38%;
     padding-top: 22px;
   }
-  .contacts-left {
-    padding-left: 30px;
-  }
   .phone-block {
     float: left;
 
@@ -160,6 +157,86 @@ header {
     text-align: right;
     //padding: 0 0 0 10px;
   }
+  .contacts-left {
+    .adress,
+    .mail {
+      font-size: 13px;
+
+      position: relative;
+
+      display: inline-block;
+      float: none;
+
+      padding-left: 30px;
+
+      color: $head-text-color;
+      &:before {
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+
+        display: inline-block;
+
+        width: 15px;
+        height: 15px;
+
+        content: '';
+
+        border-radius: 50%;
+      }
+    }
+    .adress {
+      margin-bottom: 8px;
+      &:before {
+        background: url('../img/header-map.png') no-repeat center center;
+      }
+    }
+    .mail {
+      &:before {
+        background: url('../img/header-mail.png') no-repeat center center;
+      }
+    }
+  }
+  .contacts-right {
+    .phone-link {
+      font-size: 18px;
+      font-weight: bold;
+
+      position: relative;
+
+      display: inline;
+      float: none;
+
+      padding-left: 30px;
+      span {
+        color: $head-menu-color;
+      }
+      &:before {
+        position: absolute;
+        bottom: 4px;
+        left: 2px;
+
+        display: inline-block;
+
+        width: 15px;
+        height: 15px;
+
+        content: '';
+
+        border-radius: 50%;
+        background: url('../img/header-phone.png') no-repeat center center;
+      }
+    }
+    .phone-calback {
+      font-size: 12px;
+
+      display: inline;
+
+      white-space: nowrap;
+
+      border-bottom: 1px dashed $blue;
+    }
+  }
 }
 nav {
   display: inline-block;
@@ -178,13 +255,13 @@ nav {
     display: inline-block;
     //width: 100%;
     li {
-      font-size: 12px;
+      font-size: 13px;
 
       display: inline-block;
       float: left;
 
       height: 100%;
-      margin: 0 21px;
+      margin: 0 20px;
       a {
         font-weight: bold;
 
@@ -213,14 +290,12 @@ nav {
         }
       }
       &:last-child {
-        margin-right: 0;
+        margin-right: 5px;
       }
       &:first-child {
-        margin-left: 0;
+        margin-left: 5px;
       }
-      &:nth-child(5) {
-        //float: right;margin-left: auto;
-      }
+
       &.current-menu-item {
         a {
           &:before {
@@ -313,12 +388,20 @@ nav {
 
             background: #2977ab;
           }
+          a {
+            &:before {
+              display: none;
+            }
+          }
         }
       }
     }
   }
   .headnav-right {
     float: right;
+    li {
+      margin: 0 26px;
+    }
   }
 }
 
@@ -344,7 +427,7 @@ article {
 
 .home__slide {
   height: 500px;
-  padding-top: 122px;
+  padding-top: 110px;
 
   text-align: center;
 
@@ -364,15 +447,15 @@ article {
     text-align: center;
     text-transform: uppercase;
 
-    color: $head-menu-color;
+    color: $blue;
     &:before {
       font-family: $base-font-family;
       font-size: 13px;
       font-weight: 700;
 
       position: absolute;
-      top: -5px;
-      right: 133px;
+      top: -8px;
+      right: 131px;
 
       padding: 0 1px 1px 1px;
 
@@ -385,7 +468,7 @@ article {
     }
     &:after {
       position: absolute;
-      bottom: -25px;
+      bottom: -24px;
       left: calc(50% - 43px);
 
       display: inline-block;
@@ -400,15 +483,15 @@ article {
     }
   }
   .slide-slogan {
-    font-size: 20px;
+    font-size: 19px;
 
     display: block;
 
-    margin-bottom: 39px;
+    margin-bottom: 37px;
   }
   .blue_button {
-    height: 45px;
-    padding-top: 16px;
+    height: 44px;
+    padding-top: 15px;
   }
 }
 

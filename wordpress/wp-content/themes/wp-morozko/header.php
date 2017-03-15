@@ -27,12 +27,11 @@
     <div class="inner">
       <div class="container">
         <div class="contacts-left">
-          <div class="adress-block">
+
             <span class="adress">г. Санкт-Петербург, пр. Славы, д. 26</span>
-          </div>
-          <div class="mail-block">
+
             <a href="mailto:fabrika-morozko@yandex.ru" class="mail">fabrika-morozko@yandex.ru</a>
-          </div>
+
         </div>
 
 
