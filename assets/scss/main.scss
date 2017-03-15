@@ -295,7 +295,6 @@ nav {
       &:first-child {
         margin-left: 5px;
       }
-
       &.current-menu-item {
         a {
           &:before {
@@ -498,9 +497,73 @@ article {
 
 
 
-footer {
-  height: $footer;
-  margin: $footer_margin auto 0;
 
-  background-color: $gray-light;
+
+footer {
+  //height: 493px;
+  padding-top: 20px;
+  div {
+    //display: inline-block;
+    //padding: 10px;
+  }
+  .order-form {
+    position: relative;
+
+    width: 100%;
+    height: 132px;
+
+    background: $blue;
+    div {
+      display: inline-block;
+    }
+    &:after,
+    &:before {
+      position: absolute;
+      //top: -8px;
+      left: 0;
+
+      display: block;
+
+      width: 100%;
+      height: 16px;
+
+      content: '';
+
+      background: url(../img/white-romb.png) repeat-x 0 center;
+    }
+    &:after {
+      bottom: -8px;
+    }
+    &:before {
+      top: -8px;
+    }
+  }
+  .partners {
+    height: 235px;
+  }
+  .footer-bottom {
+    position: relative;
+
+    width: 100%;
+    height: 126px;
+
+    background: url(../img/footer-bg.jpg) no-repeat center bottom;
+    div {
+      display: inline-block;
+    }
+    &:before {
+      position: absolute;
+      top: -8px;
+      left: 0;
+
+      display: block;
+
+      width: 100%;
+      height: 16px;
+
+      content: '';
+
+      background: url(../img/white-romb.png) repeat-x 0 center;
+    }
+  }
 }
