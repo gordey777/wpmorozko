@@ -1,0 +1,107 @@
+$rb-font-path: '../fonts' !default;
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+
+  src: url('#{$rb-font-path}/opensans-light.eot');
+  src: local('Open Sans Light'),
+  local('opensans-light'),
+  url('#{$rb-font-path}/opensans-light.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/opensans-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+
+  src: url('#{$rb-font-path}/opensans-regular.eot');
+  src: local('Open Sans Regular'),
+  local('opensans-regular'),
+  url('#{$rb-font-path}/opensans-regular.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/opensans-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: normal;
+
+  src: url('#{$rb-font-path}/opensans-semibold.eot');
+  src: local('Open Sans Semibold'),
+  local('opensans-semibold'),
+  url('#{$rb-font-path}/opensans-semibold.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/opensans-semibold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 900;
+  font-style: normal;
+
+  src: url('#{$rb-font-path}/opensans-extrabold.eot');
+  src: local('Open Extrabold'),
+  local('opensans-extrabold'),
+  url('#{$rb-font-path}/opensans-extrabold.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/opensans-extrabold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+
+  src: url('#{$rb-font-path}/opensans-bold.eot');
+  src: local('Open Sans Regular'),
+  local('opensans-bold'),
+  url('#{$rb-font-path}/opensans-bold.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/opensans-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: italic;
+
+  src: url('#{$rb-font-path}/opensans-lightitalic.eot');
+  src: local('Open Sans Light Italic'),
+  local('opensans-lightitalic'),
+  url('#{$rb-font-path}/opensans-lightitalic.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/opensans-lightitalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: italic;
+
+  src: url('#{$rb-font-path}/opensans-italic.eot');
+  src: local('Open Sans Italic'),
+  local('opensans-italic'),
+  url('#{$rb-font-path}/opensans-italic.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/opensans-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: italic;
+
+  src: url('#{$rb-font-path}/opensans-bolditalic.eot');
+  src: local('Open Sans Bold Italic'),
+  local('opensans-bolditalic'),
+  url('#{$rb-font-path}/opensans-bolditalic.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/opensans-bolditalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: italic;
+
+  src: url('#{$rb-font-path}/opensans-semibolditalic.eot');
+  src: local('Open Sans Semibold Italic'),
+  local('opensans-semibolditalic'),
+  url('#{$rb-font-path}/opensans-semibolditalic.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/opensans-semibolditalic.woff') format('woff');
+}

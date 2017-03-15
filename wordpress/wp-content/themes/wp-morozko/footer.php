@@ -1,28 +1,22 @@
 
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </div><!-- /.inner -->
-  </section><!-- /section -->
+        </div><!-- /.inner -->
+      </section><!-- /section -->
 
-</div><!-- /wrapper -->
+    </div><!-- /wrapper -->
 
-<footer role="contentinfo">
-  <div class="inner">
-    <div class="container">
-      <div class="row">
+    <footer role="contentinfo">
+      <div class="inner">
+        <div class="container">
 
+          <p class="copyright">
+            &copy; <?php echo date("Y"); ?> Собственность <?php bloginfo('name'); ?>.
+          </p><!-- /copyright -->
 
-      <p class="copyright">
-        &copy; <?php echo date("Y"); ?> Собственность <?php bloginfo('name'); ?>.
-      </p><!-- /copyright -->
+        </div><!-- /.container -->
+      </div><!-- /.inner -->
+    </footer><!-- /footer -->
 
+      <?php wp_footer(); ?>
 
-      </div><!-- /.row -->
-    </div><!-- /.container -->
-  </div><!-- /.inner -->
-</footer><!-- /footer -->
-
-    <?php wp_footer(); ?>
-
-</body>
+  </body>
 </html>

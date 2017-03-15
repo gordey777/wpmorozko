@@ -93,7 +93,7 @@ button {
     content: '';
 
     border: 1px dashed #fff;
-    border-radius: $base-border-radius;
+    border-radius: $base-border-radius - 1px;
     background: transparent;
   }
 }

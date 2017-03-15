@@ -1,0 +1,14 @@
+$rb-font-path: '../fonts' !default;
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('#{$rb-font-path}/OpenSans-CondensedLight.eot');
+
+  src: url('#{$rb-font-path}/OpenSans-CondensedLight.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/OpenSans-CondensedLight.woff') format('woff'),
+  url('#{$rb-font-path}/OpenSans-CondensedLight.ttf') format('truetype'),
+  url('#{$rb-font-path}/OpenSans-CondensedLight.svg#OpenSans-CondensedLight') format('svg');
+}
