@@ -8,7 +8,14 @@
 
         <div class="order-form">
           <div class="container">
-            <?php echo do_shortcode('[contact-form-7 id="39" title="Сделать заказ"]'); ?>
+            <h2 class="order-title">
+              Сделать заказ
+            </h2>
+            <div class="form_wrapp">
+              <?php echo do_shortcode('[contact-form-7 id="39" title="Сделать заказ"]'); ?>
+            </div>
+
+
           </div><!-- /.container -->
         </div><!-- /.order-form -->
 

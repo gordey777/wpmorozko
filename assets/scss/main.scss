@@ -502,23 +502,21 @@ article {
 footer {
   //height: 493px;
   padding-top: 20px;
-  div {
-    //display: inline-block;
-    //padding: 10px;
+  .container {
+    z-index: 1;
   }
   .order-form {
     position: relative;
 
     width: 100%;
     height: 132px;
+    padding-top: 49px;
 
     background: $blue;
-    div {
-      display: inline-block;
-    }
     &:after,
     &:before {
       position: absolute;
+      z-index: 0;
       //top: -8px;
       left: 0;
 
@@ -537,6 +535,69 @@ footer {
     &:before {
       top: -8px;
     }
+    .form_wrapp {
+      display: inline-block;
+      float: left;
+      .wpcf7 {
+        display: inline-block;
+      }
+      .wpcf7-form {
+        position: relative;
+
+        display: inline-block;
+        .wpcf7-response-output {
+          position: absolute;
+          top: -45px;
+
+          margin: 0 auto;
+
+          color: #fff;
+          background: $blue;
+        }
+      }
+    }
+    .order__text {
+      display: inline-block;
+      float: left;
+
+      width: 228px;
+      height: 37px;
+      margin-right: 20px;
+      input {
+        height: 100%;
+        margin: 0;
+        padding-left: 18px;
+      }
+    }
+    .order-title {
+      font-size: 50px;
+      line-height: 1;
+
+      position: relative;
+
+      display: inline-block;
+      float: left;
+
+      margin: -10px 32px 0 70px;
+
+      text-transform: uppercase;
+
+      color: #fff;
+      &:before {
+        position: absolute;
+        top: 8px;
+        left: -69px;
+
+        display: block;
+
+        width: 50px;
+        height: 40px;
+
+        content: '';
+
+        background: url(../img/cont-order.png) no-repeat center center;
+      }
+    }
   }
   .partners {
     height: 235px;
@@ -546,11 +607,9 @@ footer {
 
     width: 100%;
     height: 126px;
+    padding-top: 30px;
 
     background: url(../img/footer-bg.jpg) no-repeat center bottom;
-    div {
-      display: inline-block;
-    }
     &:before {
       position: absolute;
       top: -8px;
