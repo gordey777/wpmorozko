@@ -204,8 +204,8 @@ if (function_exists('register_sidebar')) {
     'name' => __('Блок виджетов #1', 'wpeasy'),
     'description' => __('Description for this widget-area...', 'wpeasy'),
     'id' => 'widgetarea1',
-    'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    'after_widget' => '</div>',
+    'before_widget' => '<div id="%1$s" class="widget %2$s"><div class="widget_wrapp">',
+    'after_widget' => '</div></div>',
     'before_title' => '<h6>',
     'after_title' => '</h6>'
   ));

@@ -1,4 +1,8 @@
 <aside class="sidebar" role="complementary">
+<!-- <nav class="side__menu">
+<h6 class="side-menu-title"></h6>
+  <?php //wpeSideNav(); ?>
+</nav> -->
 
   <?php if ( is_active_sidebar('widgetarea1') ) : ?>
     <?php dynamic_sidebar( 'widgetarea1' ); ?>

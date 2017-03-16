@@ -97,7 +97,7 @@
   $(document).ready(function() {
   $("#partner-slider").owlCarousel({
     items: 6,
-    margin: 40,
+    margin: 25,
     dots: false,
     nav: true,
     navText: '',
