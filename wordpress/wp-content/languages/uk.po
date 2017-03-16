@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.7.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-02-21 17:42:28+0000\n"
+"PO-Revision-Date: 2017-03-15 23:25:27+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2233,12 +2233,12 @@ msgid "Are you sure you want to delete %s?"
 msgstr "Ви впевнені, що хочете видалити %s?"
 
 #. translators: %s: site title
-#: wp-includes/pluggable.php:1720
+#: wp-includes/pluggable.php:1736
 msgid "[%s] Password Changed"
 msgstr "[%s] Пароль змінено"
 
 #. translators: %s: user name
-#: wp-includes/pluggable.php:1715
+#: wp-includes/pluggable.php:1731
 msgid "Password changed for user: %s"
 msgstr "Пароль змінено для користувача: %s"
 
@@ -2540,11 +2540,6 @@ msgstr "%s заборонено"
 msgid "Partial render must echo the content or return the content string (or array), but not both."
 msgstr "Часткова обробка мусить виводити вміст або повертати рядок (або масив) вмісту, тільки не все відразу."
 
-#: wp-includes/comment.php:242
-msgctxt "comment status"
-msgid "Approved"
-msgstr "Одобрено"
-
 #: wp-includes/comment.php:243
 msgctxt "comment status"
 msgid "Spam"
@@ -2570,6 +2565,11 @@ msgstr "<strong>ПОМИЛКА</strong>: ваше посилання занад�
 #: wp-includes/comment.php:1144
 msgid "<strong>ERROR</strong>: your comment is too long."
 msgstr "<strong>ПОМИЛКА</strong>: ваш коментар занадто довгий."
+
+#: wp-includes/comment.php:242
+msgctxt "comment status"
+msgid "Approved"
+msgstr "Схвалено"
 
 #: wp-includes/class-wp-theme.php:276
 msgid "https://codex.wordpress.org/Child_Themes"
@@ -3458,7 +3458,7 @@ msgstr "Схоже на те, що ваше посилання скидання 
 msgid "Your password reset link has expired. Please request a new link below."
 msgstr "Термін дії вашого посилання скидання паролю вийшов. Будь ласка, замовте нове посилання нижче."
 
-#: wp-includes/pluggable.php:1790
+#: wp-includes/pluggable.php:1806
 msgid "To set your password, visit the following address:"
 msgstr "Щоби змінити свій пароль, відвідайте наступну адресу:"
 
@@ -4152,15 +4152,15 @@ msgstr "<strong>Не вдалося знайти сайт %1$s.</strong> Пош�
 
 #. translators: 1: Trackback/pingback website name, 2: website IP, 3: website
 #. hostname
-#: wp-includes/pluggable.php:1436 wp-includes/pluggable.php:1447
-#: wp-includes/pluggable.php:1597 wp-includes/pluggable.php:1607
+#: wp-includes/pluggable.php:1452 wp-includes/pluggable.php:1463
+#: wp-includes/pluggable.php:1613 wp-includes/pluggable.php:1623
 msgid "Website: %1$s (IP: %2$s, %3$s)"
 msgstr "Сайт: %1$s (IP: %2$s, %3$s)"
 
 #. translators: 1: comment author, 2: author IP, 3: author domain
 #. translators: 1: Comment author name, 2: comment author's IP, 3: comment
 #. author IP's hostname
-#: wp-includes/pluggable.php:1457 wp-includes/pluggable.php:1617
+#: wp-includes/pluggable.php:1473 wp-includes/pluggable.php:1633
 msgid "Author: %1$s (IP: %2$s, %3$s)"
 msgstr "Автор: %1$s (IP: %2$s, %3$s)"
 
@@ -4375,11 +4375,11 @@ msgstr "Ви маєте передати масив типів"
 msgid "%s must set a database connection for use with escaping."
 msgstr "%s повинна встановлювати зв'язок з базою данх для використання з службовими символами."
 
-#: wp-includes/pluggable.php:1450
+#: wp-includes/pluggable.php:1466
 msgid "You can see all pingbacks on this post here:"
 msgstr "Ви можете бачити всі сповіщення щодо цього запису тут:"
 
-#: wp-includes/pluggable.php:1461
+#: wp-includes/pluggable.php:1477
 msgid "You can see all comments on this post here:"
 msgstr "Ви можете бачити всі коментарі до цього запису тут:"
 
@@ -4412,15 +4412,15 @@ msgid "Installed"
 msgstr "Встановлений"
 
 #. translators: 1: Comment text
-#: wp-includes/pluggable.php:1438 wp-includes/pluggable.php:1449
-#: wp-includes/pluggable.php:1460 wp-includes/pluggable.php:1623
+#: wp-includes/pluggable.php:1454 wp-includes/pluggable.php:1465
+#: wp-includes/pluggable.php:1476 wp-includes/pluggable.php:1639
 msgid "Comment: %s"
 msgstr "Коментар: %s"
 
 #. translators: 1: Trackback/pingback/comment author URL
-#: wp-includes/pluggable.php:1437 wp-includes/pluggable.php:1448
-#: wp-includes/pluggable.php:1459 wp-includes/pluggable.php:1599
-#: wp-includes/pluggable.php:1609 wp-includes/pluggable.php:1621
+#: wp-includes/pluggable.php:1453 wp-includes/pluggable.php:1464
+#: wp-includes/pluggable.php:1475 wp-includes/pluggable.php:1615
+#: wp-includes/pluggable.php:1625 wp-includes/pluggable.php:1637
 msgid "URL: %s"
 msgstr "URL: %s"
 
@@ -4432,7 +4432,7 @@ msgstr "Редагувати виділене"
 msgid "Previous"
 msgstr "Попередній"
 
-#: wp-includes/pluggable.php:1439
+#: wp-includes/pluggable.php:1455
 msgid "You can see all trackbacks on this post here:"
 msgstr "Ви можете бачити всі зворотні посилання на цей запис тут:"
 
@@ -7016,9 +7016,9 @@ msgstr "Додати"
 #: wp-includes/admin-bar.php:743
 msgid "%s comment awaiting moderation"
 msgid_plural "%s comments awaiting moderation"
-msgstr[0] "%s коментар чекає одобрення"
-msgstr[1] "%s коментарі чекають одобрення"
-msgstr[2] "%s коментарів чекають одобрення"
+msgstr[0] "%s коментар чекає схвалення"
+msgstr[1] "%s коментарі чекають схвалення"
+msgstr[2] "%s коментарів чекають схвалення"
 
 #: wp-includes/script-loader.php:294
 msgid "%s exceeds the maximum upload size for the multi-file uploader when used in your browser."
@@ -7187,7 +7187,7 @@ msgstr "Переглянути категорію"
 msgid "View Tag"
 msgstr "Переглянути теґ"
 
-#: wp-includes/pluggable.php:1043 wp-includes/pluggable.php:1086
+#: wp-includes/pluggable.php:1059 wp-includes/pluggable.php:1102
 msgid "You should specify a nonce action to be verified by using the first parameter."
 msgstr "Першим параметром функції потрібно вказати заздалегідь відому дію для перевірки."
 
@@ -7211,7 +7211,7 @@ msgstr "Всі записи"
 
 #: wp-includes/script-loader.php:525
 msgid "Approve and Reply"
-msgstr "Одобрити та відповісти"
+msgstr "Схвалити та відповісти"
 
 #: wp-includes/class-walker-comment.php:244
 msgid "Pingback:"
@@ -7289,7 +7289,7 @@ msgstr "Функція %1$s викликана <strong>невірно</strong>. 
 msgid "(This message was added in version %s.)"
 msgstr "(Це повідомлення додане у версії %s.)"
 
-#: wp-includes/pluggable.php:1467
+#: wp-includes/pluggable.php:1483
 msgid "Permalink: %s"
 msgstr "Постійне посилання: %s"
 
@@ -7755,7 +7755,7 @@ msgstr "На жаль, вам не дозволено оприлюднювати
 msgid "Sorry, you must be able to edit posts on this site in order to view categories."
 msgstr "На жаль, ви мусите мати змогу редагувати записи на цьому сайті, щоби переглядати категорії."
 
-#: wp-includes/pluggable.php:1758
+#: wp-includes/pluggable.php:1774
 msgid "New user registration on your site %s:"
 msgstr "Зареєстрований новий користувач на вашому сайті %s:"
 
@@ -8050,33 +8050,18 @@ msgid "But, before you can start using your site, <strong>you must activate it</
 msgstr "Перед тим, як використовувати ваш сайт <strong>вам потрібно його активувати</strong>."
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1434
+#: wp-includes/pluggable.php:1450
 msgid "New trackback on your post \"%s\""
 msgstr "Нове зворотнє посилання на ваш запис \"%s\""
 
-#: wp-includes/pluggable.php:1455
+#: wp-includes/pluggable.php:1471
 msgid "New comment on your post \"%s\""
 msgstr "Новий коментар до вашого запису \"%s\""
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1445
+#: wp-includes/pluggable.php:1461
 msgid "New pingback on your post \"%s\""
 msgstr "Нове сповіщення щодо вашого запису \"%s\""
-
-#. translators: 1: Post title
-#: wp-includes/pluggable.php:1594
-msgid "A new trackback on the post \"%s\" is waiting for your approval"
-msgstr "Нове зворотнє посилання на запис \"%s\" очікує вашого одобрення"
-
-#. translators: 1: Post title
-#: wp-includes/pluggable.php:1604
-msgid "A new pingback on the post \"%s\" is waiting for your approval"
-msgstr "Нове сповіщення щодо запису \"%s\" очікує вашого одобрення"
-
-#. translators: 1: Post title
-#: wp-includes/pluggable.php:1614
-msgid "A new comment on the post \"%s\" is waiting for your approval"
-msgstr "Новий коментар до запису \"%s\" очікує вашого одобрення"
 
 #: wp-signup.php:132
 msgid "Site Title:"
@@ -8089,6 +8074,21 @@ msgstr "Якщо ваш сайт не відображається, зверні
 #: wp-includes/ms-load.php:466
 msgid "If you are the owner of this network please check that MySQL is running properly and all tables are error free."
 msgstr "Якщо ви адміністратор мережі &#8212; переконайтеся, що MySQL працює і в таблицях немає помилок."
+
+#. translators: 1: Post title
+#: wp-includes/pluggable.php:1630
+msgid "A new comment on the post \"%s\" is waiting for your approval"
+msgstr "Новий коментар до запису \"%s\" очікує вашого схвалення"
+
+#. translators: 1: Post title
+#: wp-includes/pluggable.php:1620
+msgid "A new pingback on the post \"%s\" is waiting for your approval"
+msgstr "Нове сповіщення щодо запису \"%s\" очікує вашого схвалення"
+
+#. translators: 1: Post title
+#: wp-includes/pluggable.php:1610
+msgid "A new trackback on the post \"%s\" is waiting for your approval"
+msgstr "Нове зворотнє посилання на запис \"%s\" очікує вашого схвалення"
 
 #: wp-includes/taxonomy.php:99
 msgid "Navigation Menu"
@@ -8871,21 +8871,21 @@ msgid "PM"
 msgstr "PM"
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1463
+#: wp-includes/pluggable.php:1479
 msgid "[%1$s] Comment: \"%2$s\""
 msgstr "[%1$s] Коментар: \"%2$s\""
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1473 wp-includes/pluggable.php:1635
+#: wp-includes/pluggable.php:1489 wp-includes/pluggable.php:1651
 msgid "Delete it: %s"
 msgstr "Видалити це: %s"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1475 wp-includes/pluggable.php:1639
+#: wp-includes/pluggable.php:1491 wp-includes/pluggable.php:1655
 msgid "Spam it: %s"
 msgstr "Позначити як спам: %s"
 
-#: wp-includes/pluggable.php:1762
+#: wp-includes/pluggable.php:1778
 msgid "[%s] New User Registration"
 msgstr "[%s] Реєстрація нового користувача"
 
@@ -9233,7 +9233,7 @@ msgstr "з"
 
 #. translators: Comment moderation notification email subject. 1: Site name, 2:
 #. Post title
-#: wp-includes/pluggable.php:1647
+#: wp-includes/pluggable.php:1663
 msgid "[%1$s] Please moderate: \"%2$s\""
 msgstr "[%1$s] Узгодьте, будь ласка: \"%2$s\""
 
@@ -9296,35 +9296,27 @@ msgid "That email address has already been used. Please check your inbox for an 
 msgstr "Цей емейл вже використовується. Провірте вашу скриньку на наявність листа активації. Якщо ви не активуєте, то цей лоґін зникне з нашого сайту через кілька днів."
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1441
+#: wp-includes/pluggable.php:1457
 msgid "[%1$s] Trackback: \"%2$s\""
 msgstr "[%1$s] Трекбек: \"%2$s\""
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1452
+#: wp-includes/pluggable.php:1468
 msgid "[%1$s] Pingback: \"%2$s\""
 msgstr "[%1$s] Пінг: \"%2$s\""
 
-#: wp-includes/pluggable.php:1795
+#: wp-includes/pluggable.php:1811
 msgid "[%s] Your username and password info"
 msgstr "[%s] Ваша інформація про ім’я користувача та пароль"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1471 wp-includes/pluggable.php:1632
+#: wp-includes/pluggable.php:1487 wp-includes/pluggable.php:1648
 msgid "Trash it: %s"
 msgstr "В кошик: %s"
 
 #: wp-includes/script-loader.php:301
 msgid "moved to the trash."
 msgstr "Переміщено до кошика."
-
-#. translators: Comment moderation. 1: Number of comments awaiting approval
-#: wp-includes/pluggable.php:1642
-msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
-msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
-msgstr[0] "Наразі %s коментар очікує на одобрення. Будь ласка, відвідайте панель модерації:"
-msgstr[1] "Наразі %s коментарі очікують на одобрення. Будь ласка, відвідайте панель модерації:"
-msgstr[2] "Наразі %s коментарів очікують на одобрення. Будь ласка, відвідайте панель модерації:"
 
 #: wp-includes/ms-functions.php:1008
 msgid "That username is already activated."
@@ -9403,7 +9395,7 @@ msgstr "Невірний ID"
 msgid "What do I do now?"
 msgstr "Що мені тепер робити?"
 
-#: wp-includes/pluggable.php:1759 wp-includes/pluggable.php:1789
+#: wp-includes/pluggable.php:1775 wp-includes/pluggable.php:1805
 #: wp-login.php:329
 msgid "Username: %s"
 msgstr "Ім’я користувача: %s"
@@ -9586,11 +9578,11 @@ msgstr "Оприлюднити:"
 msgid "Align"
 msgstr "Вирівняти"
 
-#: wp-includes/pluggable.php:1600
+#: wp-includes/pluggable.php:1616
 msgid "Trackback excerpt: "
 msgstr "Уривок зворотнього посилання:"
 
-#: wp-includes/pluggable.php:1610
+#: wp-includes/pluggable.php:1626
 msgid "Pingback excerpt: "
 msgstr "Уривок сповіщення:"
 
@@ -9618,10 +9610,6 @@ msgstr "Увійти"
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:30
 msgid "Tag Cloud"
 msgstr "Хмаринка позначок"
-
-#: wp-includes/comment.php:241
-msgid "Unapproved"
-msgstr "Не одобрено"
 
 #: wp-login.php:865
 msgid "Registration complete. Please check your email."
@@ -9765,7 +9753,7 @@ msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "Ви дійсно хочете <a href=\"%s\">вийти</a>?"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1628
+#: wp-includes/pluggable.php:1644
 msgid "Approve it: %s"
 msgstr "Схвалити це: %s"
 
@@ -9804,6 +9792,18 @@ msgstr "Наступні коментарі &raquo;"
 #: wp-includes/link-template.php:699
 msgid "Comments Feed"
 msgstr "Стрічка коментарів"
+
+#. translators: Comment moderation. 1: Number of comments awaiting approval
+#: wp-includes/pluggable.php:1658
+msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
+msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
+msgstr[0] "Наразі %s коментар очікує на схвалення. Будь ласка, відвідайте панель модерації:"
+msgstr[1] "Наразі %s коментарі очікують на схвалення. Будь ласка, відвідайте панель модерації:"
+msgstr[2] "Наразі %s коментарів очікують на схвалення. Будь ласка, відвідайте панель модерації:"
+
+#: wp-includes/comment.php:241
+msgid "Unapproved"
+msgstr "Не схвалено"
 
 #: wp-includes/class-wp-theme.php:784
 msgid "Blue"
@@ -10100,11 +10100,6 @@ msgstr "Розділяйте позначки комами"
 msgid "Default"
 msgstr "За замовчуванням"
 
-#: wp-includes/class-walker-comment.php:284
-#: wp-includes/class-walker-comment.php:354
-msgid "Your comment is awaiting moderation."
-msgstr "Ваш коментар очікує на одобрення."
-
 #: wp-includes/class-wp-customize-manager.php:3731
 #: wp-includes/class-wp-xmlrpc-server.php:479
 msgid "Site Title"
@@ -10147,6 +10142,11 @@ msgstr "Коментарі закрито."
 #: wp-includes/comment-template.php:2220
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Щоб відправити коментар вам необхідно <a href=\"%s\">авторизуватись</a>."
+
+#: wp-includes/class-walker-comment.php:284
+#: wp-includes/class-walker-comment.php:354
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш коментар очікує на схвалення."
 
 #: wp-includes/category-template.php:527
 #: wp-includes/theme-compat/sidebar.php:97
@@ -10392,8 +10392,8 @@ msgid "Full Size"
 msgstr "Повний розмір"
 
 #. translators: 1: Comment author URL
-#: wp-includes/pluggable.php:1458 wp-includes/pluggable.php:1619
-#: wp-includes/pluggable.php:1760
+#: wp-includes/pluggable.php:1474 wp-includes/pluggable.php:1635
+#: wp-includes/pluggable.php:1776
 msgid "Email: %s"
 msgstr "E-mail: %s"
 

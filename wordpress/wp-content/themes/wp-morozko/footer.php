@@ -22,6 +22,32 @@
         <div class="partners">
           <div class="container">
 
+    <?php if( have_rows('footer_partners', 9 ) ): ?>
+
+
+      <div id="partner-slider" class="owl-carousel">
+
+
+        <?php while ( have_rows('footer_partners', 9 ) ) : the_row(); ?>
+          <div class="item">
+            <?php if( get_sub_field('link' ) ): ?>
+              <a href="<?php the_sub_field('link'); ?>">
+            <?php endif; ?>
+
+              <?php $image = get_sub_field('image');
+              if( !empty($image) ): ?>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+              <?php endif; ?>
+
+            <?php if( get_sub_field('link' ) ): ?>
+              </a>
+            <?php endif; ?>
+
+          </div>
+        <?php  endwhile; ?>
+      </div><!-- .main-slider -->
+
+    <?php endif; ?>
           </div><!-- /.container -->
         </div><!-- /.partners -->
 
@@ -52,13 +78,12 @@
               </div>
             </div>
 
-            <div class="footer-a1-logo">
+
               <a href="#" class="a1-logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo-a1.png" alt="">
-                <span>Создание сайта</span>
-                <span>Студия А1</span>
+                <span>Создание сайта<br>Студия А1</span>
               </a>
-            </div>
+
 
 
           </div><!-- /.container -->
@@ -68,6 +93,17 @@
     </footer><!-- /footer -->
 
       <?php wp_footer(); ?>
-
+<script>
+  $(document).ready(function() {
+  $("#partner-slider").owlCarousel({
+    items: 6,
+    margin: 40,
+    dots: false,
+    nav: true,
+    navText: '',
+    //center: true,
+  });
+});
+</script>
   </body>
 </html>

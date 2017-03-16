@@ -7,6 +7,8 @@
 @import 'import/tables';
 @import 'import/mixin';
 @import 'import/wordpress';
+@import 'owl.carousel';
+@import 'owl.theme.default';
 
 //@import 'grid/bootstrap';
 //@import 'grid/bootstrap-theme';
@@ -604,6 +606,7 @@ footer {
   }
   .footer-bottom {
     position: relative;
+    bottom: 0;
 
     width: 100%;
     height: 126px;
@@ -623,6 +626,187 @@ footer {
       content: '';
 
       background: url(../img/white-romb.png) repeat-x 0 center;
+    }
+    .footer-logo,
+    .footer-contacts-center,
+    .footer-contacts-right {
+      display: inline-block;
+      float: left;
+    }
+    .footer-logo {
+      width: 235px;
+
+      text-align: left;
+    }
+    .footer-contacts-center {
+      width: 300px;
+      margin: 0 95px 0 0;
+      padding: 14px 0  0 20px;
+      .adress,
+      .mail {
+        font-size: 12.5px;
+        font-weight: 600;
+
+        position: relative;
+
+        display: inline-block;
+        float: none;
+
+        padding-left: 30px;
+
+        color: #fff;
+        &:before {
+          position: absolute;
+          bottom: 0;
+          left: 2px;
+
+          display: inline-block;
+
+          width: 15px;
+          height: 15px;
+
+          content: '';
+
+          border-radius: 50%;
+        }
+      }
+      .adress {
+        margin-bottom: 8px;
+        &:before {
+          background: url('../img/footer-map.png') no-repeat center center;
+        }
+      }
+      .mail {
+        &:before {
+          background: url('../img/footer-mail.png') no-repeat center center;
+        }
+      }
+    }
+    .footer-contacts-right {
+      width: 200px;
+      padding-top: 14px;
+
+      text-align: right;
+      .phone-link {
+        font-size: 18px;
+        font-weight: bold;
+
+        position: relative;
+
+        display: inline;
+        float: none;
+
+        padding-left: 30px;
+
+        color: #fff;
+        span {
+          color: #fff;
+        }
+        &:before {
+          position: absolute;
+          bottom: 4px;
+          left: 2px;
+
+          display: inline-block;
+
+          width: 15px;
+          height: 15px;
+
+          content: '';
+
+          border-radius: 50%;
+          background: url('../img/footer-phone.png') no-repeat center center;
+        }
+      }
+      .phone-calback {
+        font-size: 12px;
+        line-height: 1.3;
+
+        display: inline-block;
+
+        text-align: right;
+        white-space: nowrap;
+
+        color: #fff;
+        border-bottom: 1px dashed #fff;
+      }
+    }
+    .a1-logo {
+      float: right;
+
+      width: 140px;
+      //height: 28px;
+      margin: 17px 0 0 0;
+
+      text-align: left;
+
+      color: #fff;
+      span {
+        font-size: 12px;
+        line-height: 1.2;
+
+        display: inline-block;
+
+        width: 97px;
+        margin: 0;
+        padding: 0 0 0 5px;
+
+        text-align: left;
+      }
+    }
+  }
+}
+
+#partner-slider {
+  .item,
+  a {
+    line-height: 235px;
+    //overflow: hidden;
+    img {
+      //width: 100%;
+      //min-height: 100%;
+      display: inline;
+
+      vertical-align: middle;
+    }
+  }
+}
+
+.owl-nav {
+  position: absolute;
+  z-index: 99;
+  bottom: calc(50% - 10px);
+
+  //display: block;
+
+  width: 100%;
+  height: 0;
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+
+    width: 10px;
+    height: 30px;
+    &.disabled {
+      display: none;
+    }
+    &:before {
+      font-family: 'FontAwesome';
+      font-size: 50px;
+
+      color: $blue;
+    }
+  }
+  .owl-prev {
+    left: -10px;
+    &:before {
+      content: '\f104';
+    }
+  }
+  .owl-next {
+    right: -10px;
+    &:before {
+      content: '\f105';
     }
   }
 }

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.7.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-01-27 19:24:08+0000\n"
+"PO-Revision-Date: 2017-03-15 23:17:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1705,9 +1705,9 @@ msgstr[2] "Спам <span class=\"count\">(%s)</span>"
 msgctxt "comments"
 msgid "Approved <span class=\"count\">(%s)</span>"
 msgid_plural "Approved <span class=\"count\">(%s)</span>"
-msgstr[0] "Одобрено <span class=\"count\">(%s)</span>"
-msgstr[1] "Одобрено <span class=\"count\">(%s)</span>"
-msgstr[2] "Одобрено <span class=\"count\">(%s)</span>"
+msgstr[0] "Схвалено <span class=\"count\">(%s)</span>"
+msgstr[1] "Схвалено <span class=\"count\">(%s)</span>"
+msgstr[2] "Схвалено <span class=\"count\">(%s)</span>"
 
 #. translators: %s: pending comments count
 #: wp-admin/includes/class-wp-comments-list-table.php:214
@@ -1821,7 +1821,7 @@ msgstr "У колонці <strong>Відправлено</strong> відобра
 
 #: wp-admin/edit-comments.php:173
 msgid "In the <strong>Comment</strong> column, hovering over any comment gives you options to approve, reply (and approve), quick edit, edit, spam mark, or trash that comment."
-msgstr "У колонці <strong>Коментар</strong>, наведення на будь-який коментар дає вам можливість одобрити, відповісти (та одобрити), швидко редагувати, редагувати, позначити як спам, або перемістити до кошика цей коментар."
+msgstr "У колонці <strong>Коментар</strong>, наведення на будь-який коментар дає вам можливість схвалити, відповісти (та схвалити), швидко редагувати, редагувати, позначити як спам, або перемістити до кошика цей коментар."
 
 #. translators: 1: comments count 2: post title
 #: wp-admin/edit-comments.php:137
@@ -1888,7 +1888,7 @@ msgstr "Вам буде потрібен цей пароль, щоб увійт�
 
 #: wp-admin/includes/class-wp-list-table.php:672
 msgid "No approved comments"
-msgstr "Немає одобрених коментарів"
+msgstr "Немає схвалених коментарів"
 
 #: wp-admin/includes/class-wp-list-table.php:660
 #: wp-admin/includes/class-wp-list-table.php:672
@@ -1906,9 +1906,9 @@ msgstr[2] "%s коментарів очікують"
 #: wp-admin/includes/class-wp-list-table.php:654
 msgid "%s approved comment"
 msgid_plural "%s approved comments"
-msgstr[0] "%s одобрений коментар"
-msgstr[1] "%s одобрені коментарі"
-msgstr[2] "%s одобрених коментарів"
+msgstr[0] "%s схвалений коментар"
+msgstr[1] "%s схвалені коментарі"
+msgstr[2] "%s схвалених коментарів"
 
 #: wp-admin/includes/class-wp-list-table.php:653
 msgid "%s comment"
@@ -3732,7 +3732,7 @@ msgstr "Розміри, перераховані нижче, визначают�
 
 #: wp-admin/options-discussion.php:145
 msgid "Comment must be manually approved"
-msgstr "Коментар мусить бути одобрений вручну"
+msgstr "Коментар мусить бути схвалений вручну"
 
 #: wp-admin/nav-menus.php:545
 msgid "<strong>Clicking the arrow to the right of any menu item</strong> in the editor will reveal a standard group of settings. Additional settings such as link target, CSS classes, link relationships, and link descriptions can be enabled and disabled via the Screen Options tab."
@@ -4443,7 +4443,7 @@ msgstr "Посилання на файл:"
 
 #: wp-admin/edit-comments.php:174
 msgid "In the <strong>In Response To</strong> column, there are three elements. The text is the name of the post that inspired the comment, and links to the post editor for that entry. The View Post link leads to that post on your live site. The small bubble with the number in it shows the number of approved comments that post has received. If there are pending comments, a red notification circle with the number of pending comments is displayed. Clicking the notification circle will filter the comments screen to show only pending comments on that post."
-msgstr "У колонці <strong>\"У відповідь на\"</strong> містяться три елементи. Текст - це назва запису, до якого був залишений коментар, і посилання на редагування цього запису. Посилання \"Переглянути запис\" веде до цього запису на зовнішній частині сайту. Маленька бульбашка з номером показує кількість одобрених коментарів цього запису. Якщо є коментарі в очікуванні, відображається червоний кружечок сповіщення з кількістю коментарів в очікуванні. Натиснувши на кружечок сповіщення, можна побачити коментарі в очікуванні, залишені тільки до цього запису."
+msgstr "У колонці <strong>\"У відповідь на\"</strong> містяться три елементи. Текст - це назва запису, до якого був залишений коментар, і посилання на редагування цього запису. Посилання \"Переглянути запис\" веде до цього запису на зовнішній частині сайту. Маленька бульбашка з номером показує кількість схвалених коментарів цього запису. Якщо є коментарі в очікуванні, відображається червоний кружечок сповіщення з кількістю коментарів в очікуванні. Натиснувши на кружечок сповіщення, можна побачити коментарі в очікуванні, залишені тільки до цього запису."
 
 #. translators: 1: user id, 2: user login
 #: wp-admin/users.php:382
@@ -5288,7 +5288,7 @@ msgstr "Щоби дозволити використання цієї сторі
 
 #: wp-admin/includes/class-wp-comments-list-table.php:187
 msgid "No comments awaiting moderation."
-msgstr "Немає коментарів, що чекають на одобрення."
+msgstr "Немає коментарів, що чекають на схвалення."
 
 #: wp-admin/includes/plugin-install.php:492
 msgctxt "Plugin installer section title"
@@ -7721,11 +7721,11 @@ msgstr "Цей коментар наразі в кошику."
 
 #: wp-admin/edit-comments.php:281
 msgid "This comment is already approved."
-msgstr "Цей коментар вже одобрено."
+msgstr "Цей коментар вже схвалено."
 
 #: wp-admin/comment.php:135
 msgid "This comment is currently approved."
-msgstr "Цей коментар наразі одобрено."
+msgstr "Цей коментар наразі схвалено."
 
 #: wp-admin/comment.php:80
 msgid "Moderate Comment"
@@ -8573,11 +8573,11 @@ msgstr "Чорний список"
 
 #: wp-admin/options-discussion.php:155
 msgid "When a comment contains any of these words in its content, name, URL, email, or IP, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
-msgstr "Коли коментар містить будь-яке з цих слів у вмісті, назві, посиланні, адресі e-mail, або IP-адресі, він буде затриманий для <a href=\"edit-comments.php?comment_status=moderated\">одобрення</a>. Одне слово чи IP-адреса в одному рядку. Будуть включені внутрішні слова, наприклад слово \"press\" знайдеться у слові \"WordPress\"."
+msgstr "Коли коментар містить будь-яке з цих слів у вмісті, назві, посиланні, адресі e-mail, або IP-адресі, він буде затриманий для <a href=\"edit-comments.php?comment_status=moderated\">схвалення</a>. Одне слово чи IP-адреса в одному рядку. Будуть включені внутрішні слова, наприклад слово \"press\" знайдеться у слові \"WordPress\"."
 
 #: wp-admin/options-discussion.php:153
 msgid "Hold a comment in the queue if it contains %s or more links. (A common characteristic of comment spam is a large number of hyperlinks.)"
-msgstr "Затримати коментар для одобрення, якщо він містить %s, або більше посилань. (Поширена особливість коментаря зі спамом в тому, що він містить багато посилань.)"
+msgstr "Затримати коментар для схвалення, якщо він містить %s, або більше посилань. (Поширена особливість коментаря зі спамом в тому, що він містить багато посилань.)"
 
 #: wp-admin/options-discussion.php:151 wp-admin/options-discussion.php:152
 msgid "Comment Moderation"
@@ -8585,7 +8585,7 @@ msgstr "Модерація коментарів"
 
 #: wp-admin/options-discussion.php:147
 msgid "Comment author must have a previously approved comment"
-msgstr "Автор коментаря мусить мати раніше одобрений коментар"
+msgstr "Автор повинен мати раніше схвалений коментар"
 
 #: wp-admin/options-discussion.php:141 wp-admin/options-discussion.php:142
 msgid "Before a comment appears"
@@ -8593,7 +8593,7 @@ msgstr "Перед появою коментаря"
 
 #: wp-admin/options-discussion.php:137
 msgid "A comment is held for moderation"
-msgstr "Коментар чекає на одобрення"
+msgstr "Коментар чекає на схвалення"
 
 #: wp-admin/options-discussion.php:133
 msgid "Anyone posts a comment"
@@ -10140,7 +10140,7 @@ msgstr "Відхилити цей коментар"
 #: wp-admin/includes/class-wp-comments-list-table.php:563
 #: wp-admin/includes/dashboard.php:632
 msgid "Approve this comment"
-msgstr "Одобрити цей коментар"
+msgstr "Схвалити цей коментар"
 
 #: wp-admin/includes/class-wp-press-this.php:1525
 #: wp-admin/includes/meta-boxes.php:269 wp-admin/includes/meta-boxes.php:270
@@ -10149,7 +10149,7 @@ msgstr "Відправити на узгодження"
 
 #: wp-admin/tools.php:16 wp-admin/tools.php:40 wp-admin/tools.php:51
 msgid "Press This"
-msgstr "Press This"
+msgstr "Опублікувати"
 
 #: wp-admin/includes/nav-menu.php:363 wp-admin/includes/nav-menu.php:648
 msgid "Page"
@@ -10728,7 +10728,7 @@ msgstr "До кошика"
 #: wp-admin/includes/class-wp-comments-list-table.php:563
 #: wp-admin/includes/dashboard.php:632
 msgid "Approve"
-msgstr "Одобрити"
+msgstr "Схвалити"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:293
 #: wp-admin/includes/class-wp-comments-list-table.php:558
@@ -10777,9 +10777,9 @@ msgstr[2] "%s коментарів позначено як спам."
 #: wp-admin/edit-comments.php:248
 msgid "%s comment approved"
 msgid_plural "%s comments approved"
-msgstr[0] "%s коментар одобрено"
-msgstr[1] "%s коментарі одобрено"
-msgstr[2] "%s коментарів одобрено"
+msgstr[0] "%s коментар схвалено"
+msgstr[1] "%s коментарі схвалено"
+msgstr[2] "%s коментарів схвалено"
 
 #: wp-admin/includes/class-wp-media-list-table.php:154
 #: wp-admin/includes/class-wp-media-list-table.php:514
@@ -10867,11 +10867,11 @@ msgstr "Невідома дія."
 
 #: wp-admin/comment.php:127
 msgid "Approve Comment"
-msgstr "Одобрити коментар"
+msgstr "Схвалити коментар"
 
 #: wp-admin/comment.php:126
 msgid "You are about to approve the following comment:"
-msgstr "Ви збираєтеся одобрити наступний коментар:"
+msgstr "Ви збираєтеся схвалити наступний коментар:"
 
 #: wp-admin/comment.php:123
 msgid "Permanently Delete Comment"
