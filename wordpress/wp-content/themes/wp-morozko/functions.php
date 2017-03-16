@@ -691,5 +691,23 @@ add_filter('the_content', 'filter_ptags_on_images');
 
 
 
-
+/*function insert_slider() {
+  $post = get_post();
+  $id = $id->ID;
+if( have_rows("content_slider", $id ) ){
+  $html = '<div id="owl-slider" class="owl-carousel">';
+  while ( have_rows("content_slider", $id ) ) : the_row();
+    $html = $html . '<div class="item">';
+    $image = get_sub_field("image");
+      if( !empty($image) ):
+        $html = $html . '<a href="'.$image["url"].'" rel="lightbox"><img src="'.$image["url"].'" alt="'.$image["alt"].'" /></a>';
+      endif;
+    $html = $html . '</div>';
+  endwhile;
+}
+$html = $html . '</div>';
+return $html;
+}
+add_shortcode( 'insert_slider', 'insert_slider' );*/
+//[insert_slider]
 ?>

@@ -281,6 +281,8 @@ header {
   }
 }
 
+
+/* MAIN MENU */
 nav {
   display: inline-block;
 
@@ -956,4 +958,45 @@ aside {
       }
     }
   }
+}
+
+
+/* CONTENT STULES */
+.content_wrapp {
+  p {
+    margin-bottom: 30px;
+  }
+  ul {
+    margin-bottom: 35px;
+    padding-left: 20px;
+    li {
+      margin-bottom: 15px;
+      &:before {
+        position: absolute;
+        z-index: 1;
+        bottom: 5px;
+        left: -18px;
+
+        width: 5px;
+        height: 5px;
+
+        content: '';
+        transform: rotate(45deg);
+
+        background: $blue;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+h1 {
+   font-size: 69px;
+
+  text-transform: uppercase;
+
+  color: $blue;
 }
