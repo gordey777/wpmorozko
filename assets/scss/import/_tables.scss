@@ -11,21 +11,26 @@ table {
   th,
   td {
     position: relative;
+
+    height: 33px;
+
+    text-align: center;
+
+    border: none;
+    &:first-child {
+      padding-left: 20px;
+
+      text-align: left;
+    }
   }
   th {
     font-weight: 600;
     font-weight: bold;
 
-    padding: $small-spacing 0;
-
-    text-align: center;
-
-    border-bottom: 1px solid darken($base-border-color, 15%);
+    border-bottom: none;
   }
   td {
-    padding: $small-spacing 0;
-
-    border-bottom: $base-border;
+    //border-bottom: $base-border;
   }
 }
 tr,
@@ -33,4 +38,23 @@ td,
 th {
   vertical-align: middle;
 }
-
+tr {
+  &:nth-child(even) {
+    border-top: 1px solid #daecf9;
+    border-bottom: 1px solid #daecf9;
+    background: $light-blue;
+  }
+  &:nth-child(odd) {
+    border-top: 1px solid $light-blue;
+    border-bottom: 1px solid $light-blue;
+    background: #fff;
+  }
+  &:nth-child(2) {
+    border-top: none;
+  }
+  &:first-child {
+    color: #fff;
+    border: none;
+    background: $blue;
+  }
+}
