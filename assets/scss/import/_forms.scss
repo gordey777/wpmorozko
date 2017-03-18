@@ -101,3 +101,54 @@ select {
   max-width: 100%;
   margin-bottom: $base-spacing;
 }
+
+
+//CONT-FORMS
+
+.form_wrapp {
+  display: inline-block;
+  float: left;
+}
+.wpcf7 {
+  display: inline-block;
+
+  width: 100%;
+  form {
+    width: 100%;
+  }
+}
+.wpcf7-form {
+  position: relative;
+
+  display: inline-block;
+  .wpcf7-response-output {
+    position: absolute;
+    top: -45px;
+
+    margin: 0 auto;
+
+    color: #fff;
+    background: $blue;
+  }
+}
+
+
+.order__text {
+  display: inline-block;
+  float: left;
+
+  width: 36%;
+  height: 37px;
+  margin-right: 20px;
+  input {
+    height: 100%;
+    margin: 0;
+    padding-left: 18px;
+  }
+}
+
+.order-form {
+  .order__text {
+    width: 228px;
+  }
+}

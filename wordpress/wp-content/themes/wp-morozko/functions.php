@@ -86,6 +86,7 @@ if (function_exists('add_theme_support')) {
   add_image_size('medium', 600, '', true); // Medium Thumbnail
   add_image_size('small', 250, '', true); // Small Thumbnail
   add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+  add_image_size('custom-size-small', 235, 133, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
   // Enables post and comment RSS feed links to head
   add_theme_support('automatic-feed-links');
@@ -308,7 +309,9 @@ function html5wp_pagination() {
     'base' => str_replace($big, '%#%', get_pagenum_link($big)),
     'format' => '?paged=%#%',
     'current' => max(1, get_query_var('paged')),
-    'total' => $wp_query->max_num_pages
+    'total' => $wp_query->max_num_pages,
+    'prev_text' => 'Назад',
+    'next_text' => 'Далее',
   ));
 }
 

@@ -4,7 +4,7 @@
   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+<?php edit_post_link(); ?>
       <h1 class="single-title inner-title"><?php the_title(); ?></h1>
       <?php if ( has_post_thumbnail()) :?>
         <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -12,23 +12,29 @@
         </a>
       <?php endif; ?><!-- /post thumbnail -->
 
-      <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
-      <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
-      <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span><!-- /post details -->
 
       <div class="content_wrapp">
         <?php the_content(); ?>
       </div>
 
-      <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+          <?php
 
-      <p><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); // Separated by commas ?></p>
+        $images = get_field('gallery');
 
-      <p><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></p>
+        if( $images ): ?>
+            <ul class="gallery-items">
+                <?php foreach( $images as $image ): ?>
+                    <li class="gallery-item">
+                        <a href="<?php echo $image['url']; ?>" rel="lightbox">
+                             <img class="gallery-img" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+                        </a>
+                        <p><?php echo $image['caption']; ?></p>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
 
-      <?php edit_post_link(); ?>
 
-      <?php comments_template(); ?>
 
     </article>
   <?php endwhile; else: ?>

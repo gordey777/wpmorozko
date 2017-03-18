@@ -46,6 +46,10 @@ h6 {
   line-height: $heading-line-height;
 
   margin: 0 0 $small-spacing;
+
+  text-transform: uppercase;
+
+  color: $blue;
 }
 
 p,
@@ -557,40 +561,6 @@ footer {
     &:before {
       top: -8px;
     }
-    .form_wrapp {
-      display: inline-block;
-      float: left;
-      .wpcf7 {
-        display: inline-block;
-      }
-      .wpcf7-form {
-        position: relative;
-
-        display: inline-block;
-        .wpcf7-response-output {
-          position: absolute;
-          top: -45px;
-
-          margin: 0 auto;
-
-          color: #fff;
-          background: $blue;
-        }
-      }
-    }
-    .order__text {
-      display: inline-block;
-      float: left;
-
-      width: 228px;
-      height: 37px;
-      margin-right: 20px;
-      input {
-        height: 100%;
-        margin: 0;
-        padding-left: 18px;
-      }
-    }
     .order-title {
       font-size: 50px;
       line-height: 1;
@@ -835,6 +805,19 @@ aside {
   float: left;
 
   width: 22.5%;
+  .more-link {
+    font-weight: 600;
+
+    text-decoration: underline;
+  }
+  h5 {
+    font-size: 28px;
+
+    margin-bottom: 25px;
+  }
+  .widget {
+    margin-bottom: 30px;
+  }
 }
 
 .widget_nav_menu {
@@ -963,6 +946,7 @@ aside {
 
 /* CONTENT STULES */
 .content_wrapp {
+  width: 100%;
   p {
     margin-bottom: 30px;
   }
@@ -989,14 +973,236 @@ aside {
     &:last-child {
       margin-bottom: 0;
     }
+  }img {
+    display: inline-block;
+
+    box-sizing: border-box;
+
+    border: 5px solid $blue;
+  }
+}
+.content_wrapp,
+.gallery-wrapp {
+  //
+}
+
+.gallery-items {
+  display: block;
+  float: none;
+
+  width: 100%;
+
+  text-align: left;
+}
+.gallery-item {
+  display: inline-block;
+  //float: left;
+  overflow: hidden;
+
+  box-sizing: border-box;
+  width: 31.5%;
+  height: 133px;
+  margin: 30px 2.3% 0 0;
+  padding: 0;
+
+  border: 5px solid $blue;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:nth-child(3n) {
+    float: right;
+
+    margin-right: 0;
+  }
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3) {
+    margin-top: 0;
   }
 }
 
+.gallery-img {
+  display: inline-block;
+
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
 
 h1 {
-   font-size: 69px;
+  font-size: 69px;
 
   text-transform: uppercase;
 
   color: $blue;
+}
+.inner-title {
+  line-height: 1;
+}
+
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 40px;
+}
+//CONTENT FORM
+.content_callback {
+  margin: 0;
+  padding: 25px 30px 20px;
+
+  border-radius: 5px;
+  background: url('../img/content-form-icon.png') no-repeat 30px -20px;
+  background-color: $blue;
+  .callback-title {
+    display: block;
+    span,
+    p {
+      display: inline-block;
+      float: left;
+
+      margin: 0;
+      padding: 0;
+
+      color: #fff;
+    }
+  }
+}
+
+
+.post-edit-link {
+  font-size: 25px;
+
+  display: inline-block;
+  float: right;
+}
+
+.pagination {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+
+  text-align: center;
+  .page-numbers {
+    line-height: 37px;
+
+    display: inline-block;
+
+    width: 37px;
+    height: 37px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    color: $blue;
+    border-radius: 8px;
+    background: darken($light-blue, 5%);
+  }
+  .current {
+    color: #fff;
+    background: $blue;
+  }
+  .prev,
+  .next {
+    position: absolute;
+
+    width: 100px;
+
+    color: #fff;
+    background: $blue;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+}
+
+//Reviews
+.review-title {
+  font-weight: 600;
+  font-style: italic;
+
+  position: relative;
+
+  margin-bottom: 10px;
+  padding-left: 25px;
+
+  text-transform: uppercase;
+
+  color: $blue;
+  &:before {
+    position: absolute;
+    left: 0;
+
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+
+    content: '';
+
+    background: url('../img/reviews.png') no-repeat center center;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+.review-content {
+  margin-bottom: 25px;
+}
+.reviews-side {
+  p {
+    font-style: italic;
+  }
+}
+
+
+//Akcyi
+.side-stocks {
+  display: inline-block;
+
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid $light-blue;
+  .stock-item {
+    position: relative;
+
+    display: inline-block;
+
+    width: 100%;
+    min-height: 68px;
+    margin-bottom: 15px;
+    padding: 15px 25px;
+
+    border: 1px dashed $red;
+    border-radius: 5px;
+    p {
+      text-decoration: underline;
+
+      color: $red;
+    }
+    &:before {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+
+      display: inline-block;
+
+      width: 40px;
+      height: 40px;
+
+      content: '';
+
+      border-radius: 50%;
+      background: url('../img/red-star.png') no-repeat center center;
+      background-color: #fff;
+    }
+  }
 }
