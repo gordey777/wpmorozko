@@ -479,24 +479,24 @@ nav {
     text-transform: uppercase;
 
     color: $blue;
-    &:before {
-      font-family: $base-font-family;
-      font-size: 13px;
-      font-weight: 700;
+    /*     &:before {
+  font-family: $base-font-family;
+  font-size: 13px;
+  font-weight: 700;
 
-      position: absolute;
-      top: -8px;
-      right: 131px;
+  position: absolute;
+  top: -8px;
+  right: 131px;
 
-      padding: 0 1px 1px 1px;
+  padding: 0 1px 1px 1px;
 
-      content: 'M';
+  content: 'M';
 
-      color: $blue;
-      border: 1px dashed $blue;
-      border-radius: 3px;
-      background: transparent;
-    }
+  color: $blue;
+  border: 1px dashed $blue;
+  border-radius: 3px;
+  background: transparent;
+} */
     &:after {
       position: absolute;
       bottom: -24px;
@@ -1125,8 +1125,11 @@ h4 {
 .post-edit-link {
   font-size: 25px;
 
+  position: absolute;
+  top: -40px;
+  right: 0;
+
   display: inline-block;
-  float: right;
 }
 
 .pagination {
@@ -1284,7 +1287,7 @@ h4 {
   box-sizing: border-box;
   width: 31.5%;
   //height: 133px;
-  margin: 30px 0 0 2.6%;
+  margin: 30px 0 0 2.2%;
   padding: 0;
 
   text-align: center;
@@ -1506,8 +1509,18 @@ h4 {
     border: none;
   }
   .looper {
+    margin: 30px 0 0 2.2%;
     &:before {
       display: none;
+    }
+    &:nth-last-child(3n) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3) {
+      margin-top: 0;
     }
   }
 }
