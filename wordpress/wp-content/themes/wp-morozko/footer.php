@@ -74,9 +74,12 @@
             <div class="footer-contacts-right">
               <div class="phone-block">
                 <a href="tel:+79650116505" class="phone-link">+7 (965) <span>011-6505</span></a>
-                <a class="phone-calback" href="#">заказать звонок</a>
+                <a class="phone-calback open_modal" href="#modalCallback">заказать звонок</a>
               </div>
             </div>
+
+
+
 
 
               <a href="#" class="a1-logo">
@@ -103,6 +106,31 @@
     navText: '',
     //center: true,
   });
+
+
+      /* Модальные окна */
+    var overlay = $('#overlay');
+    var open_modal = $('.open_modal');
+    var close = $('.modal_close, #overlay');
+    var modal = $('.modal_div');
+
+     open_modal.click( function(event){
+         event.preventDefault();
+         var div = $(this).attr('href');
+         overlay.fadeIn(400,
+             function(){
+                 $(div).css('display', 'block').animate({opacity: 1, top: '250px'}, 200);
+         });
+     });
+
+     close.click( function(){
+            modal.animate({opacity: 0, top: '120px'}, 200,
+                 function(){
+                     $(this).css('display', 'none');
+                     overlay.fadeOut(400);
+                 }
+             );
+     });
 });
 </script>
   </body>

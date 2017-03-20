@@ -25,7 +25,7 @@
           </a>
         </div>
       <?php endwhile; ?>
-      <a href="/?page_id=19" class="more-link">Смотреть все</a>
+      <a href="/?page_id=136" class="more-link">Смотреть все</a>
     </div>
   <?php endif; ?>
 

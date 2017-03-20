@@ -1,9 +1,12 @@
 table {
-  //width: 100%;
+  max-width: 100%;
   margin: $small-spacing 0 0;
 
   table-layout: fixed;
   border-collapse: collapse;
+  tbody {
+    //width: 100%;
+  }
   thead {
     color: #fff;
     background: $blue;

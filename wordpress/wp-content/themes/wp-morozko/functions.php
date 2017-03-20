@@ -693,24 +693,75 @@ function filter_ptags_on_images($content){
 add_filter('the_content', 'filter_ptags_on_images');
 
 
+//Вставка блока "Почему выбирают нас"
+function insert_choose() {
+if( have_rows("choose", 9 ) ){
+  $html = '<div class="choose__wrapp">';
+  $html = $html . '<h4>Почему выбирают нас</h4>';
+  while ( have_rows("choose", 9 ) ) : the_row();
+    $html = $html . '<div class="choose__item">';
 
-/*function insert_slider() {
-  $post = get_post();
-  $id = $id->ID;
-if( have_rows("content_slider", $id ) ){
-  $html = '<div id="owl-slider" class="owl-carousel">';
-  while ( have_rows("content_slider", $id ) ) : the_row();
-    $html = $html . '<div class="item">';
-    $image = get_sub_field("image");
-      if( !empty($image) ):
-        $html = $html . '<a href="'.$image["url"].'" rel="lightbox"><img src="'.$image["url"].'" alt="'.$image["alt"].'" /></a>';
-      endif;
+
+        $html = $html . '<div class="img_wrapp"><img src="'.get_sub_field('icon').'"/></div>';
+
+        $html = $html . '<span class="choose_title">'.get_sub_field('title').'</span>';
+
     $html = $html . '</div>';
   endwhile;
 }
 $html = $html . '</div>';
 return $html;
 }
-add_shortcode( 'insert_slider', 'insert_slider' );*/
+add_shortcode( 'insert_choose', 'insert_choose' );
 //[insert_slider]
+
+
+//Вставка блока "Примеры наших работ"
+function insert_portfolio() {
+
+  $posts = get_field('portfolio');
+
+  if( $posts ) {
+    $html = '<div class="content_portfolio">';
+    $html = $html . '<h4>Примеры наших работ</h4>';
+
+    foreach( $posts as $p) {
+
+      $id = $p->ID;
+      $html = $html . '<div id="post-' . $id . '" class="looper" >';
+        $images = get_field('gallery', $p->ID );
+        $html = $html . '<a rel="nofollow" class="feature-img" href="' . get_the_permalink($p->ID) . '" title="' . get_the_title($p->ID) . '">';
+          if ( has_post_thumbnail()) {
+            the_post_thumbnail('medium');
+          }
+
+          elseif ($images) {
+          $image = $images[0];
+          $img = $image['sizes']['medium'];
+            $html = $html . '<img src="' . $img . '" title="' . get_the_title($p->ID) . '" alt="' . get_the_title($p->ID) . '" />';
+          }
+
+          else {
+            $html = $html . '<img src="' . catchFirstImage($p->ID) . '" title=" ' . get_the_title($p->ID) . '" alt="' . get_the_title($p->ID) . '" />';
+          }
+
+        $html = $html . '</a><!-- /post thumbnail -->';
+
+        $html = $html . '<span class="feature__title">';
+        $html = $html . '<a href="' . get_the_permalink($p->ID) . '" title="' . get_the_title($p->ID) . '">' . get_the_title($p->ID) . '</a>';
+        $html = $html . '</span><!-- /post title -->';
+
+      $html = $html . '</div><!-- /looper -->';
+    }
+    $html = $html . '</div><!-- /.content_portfolio -->';
+
+  }
+
+  return $html;
+}
+add_shortcode( 'insert_portfolio', 'insert_portfolio' );
+//[insert_portfolio]
+
+
+
 ?>

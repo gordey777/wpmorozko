@@ -12,12 +12,15 @@
 
 
     </article>
+
   <?php endwhile; else: // If 404 page error ?>
     <article>
 
       <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
 
     </article>
+
+
 
   <?php endif; ?>
 <?php get_sidebar(); ?>

@@ -24,7 +24,7 @@ if( get_query_var('paged') ) {
 
 
 $row              = 0;
-$reviews_per_page  = 1; // Количество отзывов на страницу
+$reviews_per_page  = 10; // Количество отзывов на страницу
 $reviews           = get_field( 'reviews' );
 $total            = count( $reviews );
 $pages            = ceil( $total / $reviews_per_page );

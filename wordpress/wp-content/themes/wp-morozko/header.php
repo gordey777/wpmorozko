@@ -50,10 +50,10 @@
         <div class="contacts-right">
           <div class="phone-block">
             <a href="tel:+79650116505" class="phone-link">+7 (965) <span>011-6505</span></a>
-            <a class="phone-calback" href="#">заказать звонок</a>
+            <a class="phone-calback open_modal" href="#modalCallback">заказать звонок</a>
           </div>
           <div class="order-block">
-            <a href="#" class="button blue_button">Сделать заказ</a>
+            <a href="#modalOrder" class="button blue_button open_modal">Сделать заказ</a>
 
           </div>
         </div>
@@ -68,6 +68,20 @@
       </div><!-- /.container -->
     </div><!-- /.inner -->
   </header><!-- /header -->
+
+<div id="modalCallback" class="modal_div"> <!-- скрытый див с уникaльным id = modal1 -->
+  <span class="modal_close"></span>
+  <h3>Заказать звонок</h3>
+    <?php echo do_shortcode('[contact-form-7 id="166" title="Modal Заказать звонок"]'); ?>
+</div>
+
+<div id="modalOrder" class="modal_div"> <!-- скрытый див с уникaльным id = modal1 -->
+  <span class="modal_close"></span>
+   <h3>Сделать заказ</h3>
+   <?php echo do_shortcode('[contact-form-7 id="164" title="Modal Сделать заказ"]'); ?>
+</div>
+
+<div id="overlay"></div><!-- Пoдлoжкa, oднa нa всю стрaницу -->
 
   <section role="main">
     <div class="inner">
