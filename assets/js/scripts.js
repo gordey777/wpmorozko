@@ -21,9 +21,9 @@ if (typeof jQuery === 'undefined') {
   console.log('jQuery has loaded');
 }
 // Place any jQuery/helper plugins in here.
-$(document).ready(function() {
+jQuery(document).ready(function() {
   //слайдер партнеры
-  $("#partner-slider").owlCarousel({
+  jQuery("#partner-slider").owlCarousel({
     items: 6,
     margin: 25,
     dots: false,
@@ -34,17 +34,17 @@ $(document).ready(function() {
 
 
   /* Модальные окна */
-  var overlay = $('#overlay');
-  var open_modal = $('.open_modal');
-  var close = $('.modal_close, #overlay');
-  var modal = $('.modal_div');
+  var overlay = jQuery('#overlay');
+  var open_modal = jQuery('.open_modal');
+  var close = jQuery('.modal_close, #overlay');
+  var modal = jQuery('.modal_div');
 
   open_modal.click(function(event) {
     event.preventDefault();
-    var div = $(this).attr('href');
+    var div = jQuery(this).attr('href');
     overlay.fadeIn(400,
       function() {
-        $(div).css('display', 'block').animate({
+        jQuery(div).css('display', 'block').animate({
           opacity: 1,
           top: '250px'
         }, 200);
@@ -57,9 +57,15 @@ $(document).ready(function() {
         top: '120px'
       }, 200,
       function() {
-        $(this).css('display', 'none');
+        jQuery(this).css('display', 'none');
         overlay.fadeOut(400);
       }
     );
   });
+
+  jQuery('.noLink > a').on('click', function(e) {
+    e.preventDefault();
+
+  });
+
 });

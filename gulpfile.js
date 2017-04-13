@@ -219,7 +219,7 @@ gulp.task('browserSync', function() {
       notify: false,
       proxy: wpDomain,
       host: wpDomain,
-      port: 9090
+      port: 9092
     });
   }
 });

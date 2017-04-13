@@ -21,7 +21,7 @@
 
         <div class="partners">
           <div class="container">
-
+            <h4 class="partners-title">Наши клиенты</h4>
     <?php if( have_rows('footer_partners', 9 ) ): ?>
 
 
